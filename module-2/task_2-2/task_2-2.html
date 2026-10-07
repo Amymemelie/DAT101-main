@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" style="display: table; margin: auto; zoom: 1">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 2.2</title>
+  </head>
+  <body style="display: table-cell; vertical-align: middle">
+    <h2><label for="txtOut">Output from Task 2.2:</label></h2>
+    <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
+      <span id="txtOut"></span>
+    </div>
+    <ol>
+      <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
+      <p>
+			  De variablene som ikke burde endres kan du bruke const hvis det er noe du skal endre senere er det lettere å bruke let 
+			</p>
+      <li>How do parentheses affect the arithmetic outcome of an expression?</li>
+      <p>
+				Siden programet følger order of operations så endrere det resultatet til med egnet svar
+			</p>
+      <li>How do we limit floating-point numbers to a given number of decimals?</li>
+      <p>
+				We can use the toFixed() method to limit the number of decimals.
+			</p>
+      <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
+      <p>
+        vi bruker en vraiabel tofixed() for å sammenligne de to verdiene, den vil runde av tallet så det blir lettere å å se og mindre
+			</p>
+      <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
+      <p>
+				den sammenligner to verdier og returnerer eten sant eller falsk vi kan sjekke dette med en if statment
+			</p>
+      <li>How does the Math.random() function work, and what can it be used for?</li>
+      <p>
+				den gjør at man går til et punkt men ikke inkludert det punkte som hvis vi teller til 10 så vil den gå fra 0 til 9.99 men ikke 10.
+			</p>
+      <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
+      <p>
+				modulusen (%) returnerer resten av en divisjon, vi bruker den til å dividere.
+			</p>
+    </ol>
+		<script type="module" src="./task_2-2.mjs" defer></script>
+  </body>
+</html>
