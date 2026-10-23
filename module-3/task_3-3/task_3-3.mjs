@@ -3,6 +3,8 @@ import { printOut, newLine } from "../../common/script/utils.mjs";
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
+const event = new Date(Date.UTC(2026, 10, 21,))
+printOut(event.toLocaleDateString("no-NB", { timezone:"UTC"}))
 
 printOut(newLine);
 
