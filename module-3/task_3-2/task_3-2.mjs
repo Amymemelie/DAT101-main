@@ -44,21 +44,22 @@ printOut(newLine);
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-let primes = [ ];
-for(let number = 2; number < 200; number++){
-    let isprime = true;
-    let divisor = number - 1;
-while (divisor => 2){
-    if(number % divisor === 0){
-        isprime = false;
-        break;
+let primes = "";
+for (let i = 2; i <= 200; i++) {
+  let isPrime = true;
+  let j = i - 1;
+  while (isPrime && j > 1) {
+    if (i % j === 0) {
+      isPrime = false;
     }
-    divisor --;
-    if(isprime){
-        primes.push(number);
-    }
+    j--;
+  }
+  if (isPrime === true) {
+    primes += " " + i;
+  }
 }
-}
+
+printOut(primes);
 
 
  printOut(newLine);
